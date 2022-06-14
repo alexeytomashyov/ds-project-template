@@ -19,11 +19,11 @@ ds-project-template/
 
 ### Порядок инициализации проекта
 #### Пререквизиты
-1. Python 3
-1. Утилита [poetry](https://python-poetry.org/docs/#installation)
-1. Утилита [cookiecutter](https://cookiecutter.readthedocs.io/en/stable/installation.html)
+- Python 3
+- Утилита [poetry](https://python-poetry.org/docs/#installation)
+- Утилита [cookiecutter](https://cookiecutter.readthedocs.io/en/stable/installation.html)
 
-Сначала создаем директорию с проектом с помощью cookiecutter через http
+1. Создаем директорию с проектом с помощью cookiecutter через http
 ```
 cookiecutter git+https://stash.sigma.sbrf.ru/scm/b2b_ecosystem_ai/ds-project-template.git
 ```
@@ -31,13 +31,11 @@ cookiecutter git+https://stash.sigma.sbrf.ru/scm/b2b_ecosystem_ai/ds-project-tem
 ```
 cookiecutter git+ssh://git@stash.sigma.sbrf.ru:7999/b2b_ecosystem_ai/ds-project-template.git
 ```
-
-Затем переходим в директорию с проектом
+2. Переходим в директорию с проектом
 ```
 cd [directory_name]
 ```
-
-Устанавливаем базовые пакеты (notebook, pandas, sklearn)
+3. Устанавливаем базовые пакеты (notebook, pandas, sklearn)
 ```
 make install
 ```
@@ -45,8 +43,7 @@ make install
 ```
 poetry add [package_name]
 ```
-
-Запуск jupyter notebook
+4. Запуск jupyter notebook
 ```
 poetry jupyter notebook
 ```
