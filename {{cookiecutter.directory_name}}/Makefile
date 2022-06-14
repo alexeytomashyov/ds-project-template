@@ -4,7 +4,7 @@ install:
 	poetry add --dev sklearn
 
 get data:
-	cp /Volumes/EcosystemB2B/AI/data/{{basename $(pwd)}}/{{cookiecutter.directory_name}} data
+	cp /Volumes/EcosystemB2B/AI/data/{{cookiecutter._pwd}}/{{cookiecutter.directory_name}} data
 
 push data:
-	cp -r data /Volumes/EcosystemB2B/AI/data/{{basename $(pwd)}}/{{cookiecutter.directory_name}}
+	cp -r data /Volumes/EcosystemB2B/AI/data/{{cookiecutter._pwd}}/{{cookiecutter.directory_name}}

@@ -1,1 +1,1 @@
-mkdir -p /Volumes/EcosystemB2B/AI/data/{{basename $(pwd)}}/{{cookiecutter.directory_name}}
+mkdir -p /Volumes/EcosystemB2B/AI/data/{{cookiecutter._pwd}}/{{cookiecutter.directory_name}}
