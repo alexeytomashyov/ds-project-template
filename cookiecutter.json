@@ -1,5 +1,6 @@
 {
     "directory_name": "",
     "author_name": "",
-    "compatible_python_versions": "~3.8"
+    "compatible_python_versions": "~3.8",
+    "_pwd": "basename $(pwd)"
 }
