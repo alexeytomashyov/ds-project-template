@@ -47,3 +47,22 @@ poetry add [package_name]
 ```
 poetry jupyter notebook
 ```
+
+### Загрузка проекта на Bitbucket
+1. Создать новый репозиторий на Bitbucket с указанием КЭС. Например, `ast/complaints`
+2. Привязать репозиторий к проекту
+```bash
+git init
+git add --all
+git commit -m "Initial Commit"
+git remote add origin ssh://git@stash.sigma.sbrf.ru:7999/b2b_ecosystem_ai/{название репозитория}.git
+git push -u origin
+```
+3. Сохранить данные на командном ФИРе
+```
+make push_data
+```
+N.B. Чтобы подключить сетевой диск на Mac нужно
+- в finder открыть меню *Переход/Подключение к Серверу...*
+- ввести название сервера `smb://Rubin1.sigma.sbrf.ru/vol2/EcosystemB2B`
+- нажать **Подключиться**
