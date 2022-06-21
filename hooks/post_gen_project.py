@@ -4,7 +4,7 @@ from pathlib import Path
 
 basename = os.path.basename(Path.cwd().parent)
 
-os.makedirs(f'/Volumes/EcosystemB2B/AI/data/{basename}/{{cookiecutter.directory_name}}', mode=0o700, exist_ok=True)
+# os.makedirs(f'/Volumes/EcosystemB2B/AI/data/{basename}/{{cookiecutter.directory_name}}', mode=0o700, exist_ok=True)
 
 makefile = f"""
 install:
