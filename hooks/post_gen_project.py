@@ -11,6 +11,7 @@ install:
 	poetry add --dev notebook
 	poetry add --dev pandas
 	poetry add --dev sklearn
+    poetry add --dev matplotlib
 
 get_data:
 	cp -r /Volumes/EcosystemB2B/AI/data/{basename}/{{cookiecutter.directory_name}}/ ./data/
@@ -38,7 +39,7 @@ poetry install
 make get_data
 ```
 N.B. Чтобы подключить сетевой диск на Mac нужно
-- в finder открыть меню *Переход/Подключение к Серверу...*
+- в **Finder** открыть меню *Переход/Подключение к Серверу...*
 - ввести название сервера `smb://Rubin1.sigma.sbrf.ru/vol2/EcosystemB2B`
 - нажать **Подключиться**
 

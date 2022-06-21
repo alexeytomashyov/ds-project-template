@@ -23,29 +23,31 @@ ds-project-template/
 - Утилита [poetry](https://python-poetry.org/docs/#installation)
 - Утилита [cookiecutter](https://cookiecutter.readthedocs.io/en/stable/installation.html)
 
+1. Подключаем сетевой диск EcosystemB2B
+
 1. Создаем директорию с проектом с помощью cookiecutter через http
 ```
-cookiecutter git+https://stash.sigma.sbrf.ru/scm/b2b_ecosystem_ai/ds-project-template.git
+$ cookiecutter git+https://stash.sigma.sbrf.ru/scm/b2b_ecosystem_ai/ds-project-template.git
 ```
 или через ssh
 ```
-cookiecutter git+ssh://git@stash.sigma.sbrf.ru:7999/b2b_ecosystem_ai/ds-project-template.git
+$ cookiecutter git+ssh://git@stash.sigma.sbrf.ru:7999/b2b_ecosystem_ai/ds-project-template.git
 ```
 2. Переходим в директорию с проектом
 ```
-cd [directory_name]
+$ cd [directory_name]
 ```
 3. Устанавливаем базовые пакеты (notebook, pandas, sklearn)
 ```
-make install
+$ make install
 ```
 и добавляем те, которые нужны для этого проекта
 ```
-poetry add [package_name]
+$ poetry add [package_name]
 ```
 4. Запуск jupyter notebook
 ```
-poetry jupyter notebook
+$ poetry run jupyter notebook
 ```
 
 ### Загрузка проекта на Bitbucket
@@ -63,6 +65,6 @@ git push -u origin
 make push_data
 ```
 N.B. Чтобы подключить сетевой диск на Mac нужно
-- в finder открыть меню *Переход/Подключение к Серверу...*
+- в **Finder** открыть меню *Переход/Подключение к Серверу...*
 - ввести название сервера `smb://Rubin1.sigma.sbrf.ru/vol2/EcosystemB2B`
 - нажать **Подключиться**
