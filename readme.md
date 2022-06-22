@@ -51,7 +51,7 @@ $ poetry run jupyter notebook
 ```
 
 ### Загрузка проекта на Bitbucket
-1. Создать новый репозиторий на Bitbucket с указанием КЭС. Например, `ast/complaints`
+1. Создать новый репозиторий на Bitbucket с указанием КЭС. Например, `ast-complaints`
 2. Привязать репозиторий к проекту
 ```bash
 git init
