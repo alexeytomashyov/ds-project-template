@@ -1,6 +1,6 @@
-## Шаблон DS проекта команды AI Дирекции B2B экосистемы
+## Шаблон DS проекта
 
-Рекомендуемый шаблон для нового проекта и сохранения проекта в BitBucket.
+Рекомендуемый шаблон для нового проекта
 
 ### Структура директории
 ```bash
@@ -27,11 +27,11 @@ ds-project-template/
 
 1. Создаем директорию с проектом с помощью cookiecutter через http
 ```
-$ cookiecutter git+https://stash.sigma.sbrf.ru/scm/b2b_ecosystem_ai/ds-project-template.git
+$ cookiecutter git+https://github.com/alexeytomashyov/ds-project-template.git
 ```
 или через ssh
 ```
-$ cookiecutter git+ssh://git@stash.sigma.sbrf.ru:7999/b2b_ecosystem_ai/ds-project-template.git
+$ cookiecutter git+ssh://git@github.com:alexeytomashyov/ds-project-template.git
 ```
 2. Переходим в директорию с проектом
 ```
@@ -49,22 +49,3 @@ $ poetry add [package_name]
 ```
 $ poetry run jupyter notebook
 ```
-
-### Загрузка проекта на Bitbucket
-1. Создать новый репозиторий на Bitbucket с указанием КЭС. Например, `ast-complaints`
-2. Привязать репозиторий к проекту
-```bash
-git init
-git add --all
-git commit -m "Initial Commit"
-git remote add origin ssh://git@stash.sigma.sbrf.ru:7999/b2b_ecosystem_ai/{название репозитория}.git
-git push -u origin
-```
-3. Сохранить данные на командном ФИРе
-```
-make push_data
-```
-N.B. Чтобы подключить сетевой диск на Mac нужно
-- в **Finder** открыть меню *Переход/Подключение к Серверу...*
-- ввести название сервера `smb://Rubin1.sigma.sbrf.ru/vol2/EcosystemB2B`
-- нажать **Подключиться**
